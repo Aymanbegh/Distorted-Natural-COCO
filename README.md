@@ -1,6 +1,6 @@
 # Object-Detection-under-Local-Distortions-
 
-This repository provides additional new benchmark dataset constructed for natural in-capture distortions from MS-COCO dataset to better assess the reliability
+This repository provides an additional new benchmark dataset constructed for natural in-capture distortions from MS-COCO dataset to better assess the reliability
 of the object detection models in case of real distortions. It serves as a complement to the study: conducted on the robustness to distortions of object detection models. It allows to evaluate the efficiency of the data augmentation through the generation of synthetic distorted images on the robustness of models in real images case.
 
 Requirements
@@ -8,20 +8,20 @@ Requirements
 
     MS-COCO 2017 dataset (validation set)
     Python 3.8 (Tested on it)
-    Requirements of the object detection model to test
+    Requirements of the object detection model to evaluate
 
 Overview
 -----------------------------------
 
 In the existing methods, robustness evaluations of object detection algorithms were performed on synthetic distortions or specific datasets which limits the extension of those studies in real-world applications.
-Therefore, we have done a manual identification of the natural distortions present in the MS-COCO validation set to better assess the robustness in real scenarios. 
+Therefore, we have done this manual identification of the natural distortions present in the MS-COCO validation set to better assess the robustness in real scenarios. 
 It is worth noticing that the selected sub-sets from MS-COCO contain images with global distortions and the associated object annotations. Whereas,
 in the case of local distortions, only affected objects are considered as in the following figure:
 
-![image](https://user-images.githubusercontent.com/80038451/153512080-b0fd582b-9d8d-4651-b576-1a9d6f87a484.png)
+![image](https://user-images.githubusercontent.com/80038451/153636927-c59befa1-c96a-42a3-9e88-f3a4490e011b.png)
 
-we established a benchmark framework for distortions evaluation using one of the most widespread databases for object detection (MS-COCO), even though restricted to a limited
-set of seven natural distortions (see table I). In this way, we are laying the foundations for a future common evaluation method for evaluating object detection robustness. 
+We established this benchmark framework for distortions evaluation using one of the most widespread databases for object detection (MS-COCO), even though restricted to a limited
+set of seven natural distortions (see table below). In this way, we are laying the foundations for a future common evaluation method for evaluating object detection robustness. 
 
 | | Noise| Contrast| Blur | Defocus  | Rain  | Local blur | Backlight illumination   | 
 | ------ | ------ | ------ | ------ |  ------ | ------ | ------ | ------ | 
@@ -115,7 +115,7 @@ The YOLOv4 directory is as following:
             └── includes result from the model test validation    
             ```
   
-In our case, the coco.data file is:
+In our case, the coco.data file in the data directory is:
 
     classes= 80
     train =  ./*file_name_with_image_paths_for_training*.txt
@@ -131,7 +131,10 @@ Below is mAP (mean average precision) with IoU=[0.50:0.95] (AP COCO metric) and 
 | AP | 0.298 | 0.186 | 0.215 | 0.137 | 0.270 | 0.183 | 0.131 | 0.221  | 
 | mIoU | 0.773 | 0.744 | 0.760  | 0.746 | 0.762 | 0.755 | 0.749 | 0.758 | 
 
-Here, results for the model YOLOv4-tiny trained on the train2017 set from the MS-COCO dataset and trained on this train2017 set distorted (See repository:  ):
+Here, MS-COCO validation set is the original validation set from COCO 2017 that contains 5K images.
+Then, results for the model YOLOv4-tiny trained on the train2017 set from the MS-COCO dataset and trained on this train2017 set distorted (See repository:  ):
+- Trained on MS-COCO train set (118k images)
+- Trained on MS-COCO train set distorted (118k images): 5% of the contained images for each of the 10 distortion types
 
 
 
@@ -146,6 +149,16 @@ Furthermore, this framework is an in-dept study with a wide scope that informs a
 
     mAP metric :
 ![image](https://user-images.githubusercontent.com/80038451/153515751-639ea60a-5eaf-48b2-963f-7b061ee55b37.png)
+
+
+Citation
+-----------------------------------
+
+Use this BibTeX to cite this repository:
+
+
+
+Use this BibTeX to cite the corresponding paper:
 
 
 
