@@ -144,10 +144,11 @@ Metrics
 
 Furthermore, this framework is an in-dept study with a wide scope that informs about the ability to detect distorted objects and the detection accuracy according to common metrics:
 
-    mIoU metric : 
+- mIoU metric : 
+
 ![image](https://user-images.githubusercontent.com/80038451/153515307-a4990af7-2350-44bb-89aa-912557968374.png)
 
-    mAP metric :
+- mAP metric :
 ![image](https://user-images.githubusercontent.com/80038451/153515751-639ea60a-5eaf-48b2-963f-7b061ee55b37.png)
 
 
