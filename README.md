@@ -8,7 +8,7 @@ Requirements
 
     MS-COCO 2017 dataset (validation set)
     Python 3.8 (Tested on it)
-    Requirement of object detction model tested
+    Requirements of the object detection model to test
 
 Overview
 -----------------------------------
@@ -28,7 +28,53 @@ set of seven natural distortions (see table I). In this way, we are laying the f
 | Images | 44 | 42 | 32  | 201 | 21 | 127 |  128 | 
 | Objects | 289 | 312 | 224  | 1299 | 110 | 464 |  934 | 
 | Ratio | 1.0| 0.83 | 0.97  | 0.72 | 0.95 | 0.34 | 0.68 | 
+
 Ratio: Number of retained objects/Number of annotated objects present in images.
+
+
+Project tree structure
+-----------------------------------
+
+Create a data folder under the repository,
+
+    cd {repo_root}
+    mkdir natural_val2017
+    
+Then copy our depository inside.
+    
+- **MS-COCO natural distortion**: structure of each one of the 7 natural distortion folders withimage list, images and annotations
+    ```
+  *Distortion_name*
+  ├── annotations
+      └──instances_*distortion_name*.json
+  │── images
+      └── ****.jpg
+  ├── list.txt
+  ```
+ 
+- **List.txt**: lists locations and names of each images
+    ```
+    Exemple:
+    .\Backlight illumination\images\000000001268.jpg
+    add your path directory:
+    C:\Users\beghd\OneDrive\Bureau\natural_val2017\Backlight illumination\images\000000001268.jpg
+    ```
+    
+ - **Natural COCO evaluation**: functions in python to evaluate the model performance
+      ```
+    ├── coco_eval: main function to launch the evaluation process
+    ├── coco: extract inforamtion and annotations from the detected and ground truth JSON files (in folder "annotation": see **MS-COCO natural distortion** for the ground truth)
+    ├── COCOevals: Compute the mIoU and AP scores for the selected distortion set
+    ├── mask: function from the original "pycocotools" library 
+      ```
+
+
+How to launch the evaluation
+-----------------------------------
+
+Metrics
+-----------------------------------
+
 Furthermore, this framework is an in-dept study with a wide scope that informs about the ability to detect distorted objects and the detection accuracy according to common metrics:
 
     mIoU metric : 
@@ -37,11 +83,6 @@ Furthermore, this framework is an in-dept study with a wide scope that informs a
     mAP metric :
 ![image](https://user-images.githubusercontent.com/80038451/153515751-639ea60a-5eaf-48b2-963f-7b061ee55b37.png)
 
-Image Distortions
------------------------------------
-
-- Global distortions: affect the image as a whole and come from different sources related in general to the acquisition conditions. Some are directly dependent on the physical characteristics of the camera and are of photometric or geometric origin. Among the most common distortions that affect the quality of the signal are defocusing blur, photon noise, geometric or chromatic aberrations, and blur due to the movement of the camera or the movement of objects. The other types of degradation are related to the environment and more particularly the lighting and atmospheric disturbances in the case of outdoor scenes. Compression and image transmission artifacts are another source of degradation that is difficult to control. These common distortions have been already considered in benchmarking the performance of some models.
-- Local distortions: are undesirable signals affecting one or more localized areas in the image (see figure 1). A typical case is the blurring due to the movement of an object of relatively high speed. Another photometric distortion is the appearance of a halo around the object contours due to the limited sensitivity of the sensors or backlight illumination (BI). The artistic blur affecting a particular part of the targeted scene, the object to be highlighted by the pro-shooter, is another type of local distortion. Thus, integrating the local distortions in the database increases its size and makes it richer and more representative of scenarios close to real applications which improves the relevance of trained models.
 
 
 
