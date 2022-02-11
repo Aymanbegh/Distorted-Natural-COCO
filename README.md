@@ -1,7 +1,7 @@
 # Object-Detection-under-Local-Distortions-
 
 This repository provides additional new benchmark dataset constructed for natural in-capture distortions from MS-COCO dataset to better assess the reliability
-of the object detection models in case of real distortions.
+of the object detection models in case of real distortions. It serves as a complement to the study: conducted on the robustness to distortions of object detection models. It allows to evaluate the efficiency of the data augmentation through the generation of synthetic distorted images on the robustness of models in real images case.
 
 Requirements
 -----------------------------------
@@ -99,7 +99,7 @@ or to get the results into a txt file:
 
 Experiments
 -----------------------------------
-We evaluated the YOLOv4-tiny pre-trained model from the  by using NVIDIA RTX 2080Ti.
+We evaluated the YOLOv4-tiny pre-trained model (from: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights) by using NVIDIA RTX 2080Ti.
 The YOLOv4 directory is as following:
 
             ```
