@@ -1,42 +1,42 @@
-.\Contrast augmentation\images\000000008762.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000025393.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000028993.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000127624.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000153782.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000183246.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000224119.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000232684.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000234807.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000255536.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000267933.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000274708.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000279927.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000289938.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000291490.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000292415.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000310980.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000323571.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000351559.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000360960.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000379476.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000380706.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000401862.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000403584.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000419098.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000425221.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000425702.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000441553.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000451155.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000453841.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000463690.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000464358.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000477805.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000482436.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000491216.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000492077.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000527215.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000534827.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000539445.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000552612.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000554595.\Contrast augmentationjpg
-.\Contrast augmentation\images\000000579970.\Contrast augmentationjpg
+.\Contrast augmentation\images\000000008762.jpg
+.\Contrast augmentation\images\000000025393.jpg
+.\Contrast augmentation\images\000000028993.jpg
+.\Contrast augmentation\images\000000127624.jpg
+.\Contrast augmentation\images\000000153782.jpg
+.\Contrast augmentation\images\000000183246.jpg
+.\Contrast augmentation\images\000000224119.jpg
+.\Contrast augmentation\images\000000232684.jpg
+.\Contrast augmentation\images\000000234807.jpg
+.\Contrast augmentation\images\000000255536.jpg
+.\Contrast augmentation\images\000000267933.jpg
+.\Contrast augmentation\images\000000274708.jpg
+.\Contrast augmentation\images\000000279927.jpg
+.\Contrast augmentation\images\000000289938.jpg
+.\Contrast augmentation\images\000000291490.jpg
+.\Contrast augmentation\images\000000292415.jpg
+.\Contrast augmentation\images\000000310980.jpg
+.\Contrast augmentation\images\000000323571.jpg
+.\Contrast augmentation\images\000000351559.jpg
+.\Contrast augmentation\images\000000360960.jpg
+.\Contrast augmentation\images\000000379476.jpg
+.\Contrast augmentation\images\000000380706.jpg
+.\Contrast augmentation\images\000000401862.jpg
+.\Contrast augmentation\images\000000403584.jpg
+.\Contrast augmentation\images\000000419098.jpg
+.\Contrast augmentation\images\000000425221.jpg
+.\Contrast augmentation\images\000000425702.jpg
+.\Contrast augmentation\images\000000441553.jpg
+.\Contrast augmentation\images\000000451155.jpg
+.\Contrast augmentation\images\000000453841.jpg
+.\Contrast augmentation\images\000000463690.jpg
+.\Contrast augmentation\images\000000464358.jpg
+.\Contrast augmentation\images\000000477805.jpg
+.\Contrast augmentation\images\000000482436.jpg
+.\Contrast augmentation\images\000000491216.jpg
+.\Contrast augmentation\images\000000492077.jpg
+.\Contrast augmentation\images\000000527215.jpg
+.\Contrast augmentation\images\000000534827.jpg
+.\Contrast augmentation\images\000000539445.jpg
+.\Contrast augmentation\images\000000552612.jpg
+.\Contrast augmentation\images\000000554595.jpg
+.\Contrast augmentation\images\000000579970.jpg
