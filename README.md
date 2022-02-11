@@ -71,6 +71,67 @@ Then copy our depository inside.
 
 How to launch the evaluation
 -----------------------------------
+**Required files**
+- The ground truth json file (gt) corresponding to the desired natural distortion
+- The detection json file (dt) corresponding to the result of the model detection on distorted set (bounding boxes and categories detected per images)
+
+**Get results of the model detection on distorted set**
+- Copy the corresponding list file in the model directory or the instance json file (by exemple: instances_noise.json to test the model on the noise distortion)
+- Launch the test and get back the result path (dt_path/*name_results*.json)
+
+**Launch the coco evaluation process**
+- Go to the directory containing the coco_eval function:
+
+        cd ~/natural_val2017
+        
+- Then call the main function:
+
+        python coco_eval.py /gt_path/instances_*distortion_name*.json dt /dt_path/*name_results*.json bbox
+        
+"bbox" indicates the evaluation type, in the case of the noise evaluation, the calling function is:
+
+        python coco_eval.py ./Noise/instances_noise.json /path_to_the_model_directory/results/coco_results.json bbox
+        
+or to get the results into a txt file:
+
+        python coco_eval.py ./Noise/instances_noise.json /path_to_the_model_directory/results/coco_results.json bbox > *result_name*.txt
+        
+
+Experiments
+-----------------------------------
+We evaluated the YOLOv4-tiny pre-trained model from the  by using NVIDIA RTX 2080Ti.
+The YOLOv4 directory is as following:
+
+            ```
+        darknet
+        ├── cfg
+            └──includes the models configurations
+        │── data
+            └── includes the coco configuration and the images path (list.txt file)
+                └── coco.names: names of coco's categories
+                └── coco.data: include path to usefull directories   
+                └── list.txt
+        │── results
+            └── includes result from the model test validation    
+            ```
+  
+In our case, the coco.data file is:
+
+    classes= 80
+    train =  ./*file_name_with_image_paths_for_training*.txt
+    valid = ./list.txt
+    names = ./coco.names
+    backup = /path_to_darknet/backup/
+    eval=coco
+
+Below is mAP (mean average precision) and mIoU (mean Intersection over Union) for our naturally distorted COCO val2017 sets:
+
+| Metric | Noise| Contrast| Blur | Defocus  | Rain  | Local blur | Backlight illumination   |  MS-COCO validation set   | 
+| ------ | ------ | ------ | ------ |  ------ | ------ | ------ | ------ | ------ | 
+| mAP | 44 | 42 | 32  | 201 | 21 | 127 |  128 |   | 
+| mIoU | 289 | 312 | 224  | 1299 | 110 | 464 |  934 |  |  
+
+
 
 Metrics
 -----------------------------------
