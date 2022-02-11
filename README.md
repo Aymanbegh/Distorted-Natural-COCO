@@ -124,12 +124,15 @@ In our case, the coco.data file is:
     backup = /path_to_darknet/backup/
     eval=coco
 
-Below is mAP (mean average precision) and mIoU (mean Intersection over Union) for our naturally distorted COCO val2017 sets:
+Below is mAP (mean average precision) with IoU=[0.50:0.95] (AP COCO metric) and mIoU (mean Intersection over Union) for our naturally distorted COCO val2017 sets:
 
 | Metric | Noise| Contrast| Blur | Defocus  | Rain  | Local blur | Backlight illumination   |  MS-COCO validation set   | 
 | ------ | ------ | ------ | ------ |  ------ | ------ | ------ | ------ | ------ | 
-| mAP | 44 | 42 | 32  | 201 | 21 | 127 |  128 |   | 
-| mIoU | 289 | 312 | 224  | 1299 | 110 | 464 |  934 |  |  
+| AP | 0.298 | 0.186 | 0.215 | 0.137 | 0.270 | 0.183 | 0.131 | 0.221  | 
+| mIoU | 0.773 | 0.744 | 0.760  | 0.746 | 0.762 | 0.755 | 0.749 | 0.758 | 
+
+Here, results for the model YOLOv4-tiny trained on the train2017 set from the MS-COCO dataset and trained on this train2017 set distorted (See repository:  ):
+
 
 
 
