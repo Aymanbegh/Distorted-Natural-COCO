@@ -13,7 +13,14 @@ Requirements
 Distorted natural MS-COCO sub-sets
 -----------------------------------
 
-Sorted images and annotations including distorted natural images are in the 7 folders:
+Sorted images and annotations including distorted natural images are in the 7 following folders:
+- Backlight illumination
+- Contrast augmentation 
+- Image blur motion
+- Image defocus
+- Local object blur
+- Noise
+- Rain
 
 Overview
 -----------------------------------
