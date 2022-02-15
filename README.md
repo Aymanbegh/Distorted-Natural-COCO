@@ -9,6 +9,11 @@ Requirements
     MS-COCO 2017 dataset (validation set)
     Python 3.8 (Tested on it)
     Requirements of the object detection model to evaluate
+    
+Distorted natural MS-COCO sub-sets
+-----------------------------------
+
+Sorted images and annotations including distorted natural images are in the 7 folders:
 
 Overview
 -----------------------------------
